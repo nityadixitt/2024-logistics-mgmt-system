@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Optimization</title>
+  <link rel="stylesheet" href="route_optimization.css">
+  <!-- Leaflet CSS for OpenStreetMap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 400px;
+      width: 80%;
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚚 Route Optimization</h1>
+    <p>Find the shortest route between two cities.</p>
+  </header>
+
+  <section class="route-form">
+    <label for="fromCity">From:</label>
+    <input type="text" id="fromCity" placeholder="Enter source city">
+
+    <label for="toCity">To:</label>
+    <input type="text" id="toCity" placeholder="Enter destination city">
+
+    <button onclick="findShortestPath()">Find Shortest Route</button>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results" id="results">
+    <!-- Shortest path results will be displayed here -->
+  </section>
+
+  <!-- Map Section -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="route_optimization.js"></script>
+</body>
+</html>
+

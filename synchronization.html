@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Synchronization Dashboard</title>
+    <link rel="stylesheet" href="synchronization.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inventory Synchronization Dashboard</h1>
+        </header>
+
+        <!-- Inventory Overview Section -->
+        <section class="overview">
+            <h2>Inventory Overview</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Location</th>
+                        <th>Stock Level</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add Item Form -->
+        <section class="add-item">
+            <h2>Add New Item</h2>
+            <form id="addItemForm">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="number" id="stockLevel" placeholder="Stock Level" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <!-- Synchronize Inventory Section -->
+        <section class="sync-inventory">
+            <h2>Synchronize Inventory</h2>
+            <button id="syncButton">Sync Inventory</button>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Inventory Management</p>
+        </footer>
+    </div>
+
+    <script src="synchronization.js"></script>
+</body>
+</html>
